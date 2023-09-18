@@ -1,9 +1,15 @@
 import React from 'react'
 import Header from './components/Header';
+import SearchForm from './components/subcomponents/Search';
+import Commend from './components/Commend';
 
 function App() {
   return (
-    <Header/>
+    <React.Fragment>
+      <Header/>
+      <SearchForm/>
+      <Commend/>
+    </React.Fragment>
   )
 }
 
