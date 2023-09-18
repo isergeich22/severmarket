@@ -1,16 +1,25 @@
-import React from 'react'
-import Header from './components/Header';
-import SearchForm from './components/subcomponents/Search';
-import Commend from './components/Commend';
+import React from 'react';
+import * as ReactDOM from 'react-dom'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+import Home from './pages/Home'
 
-function App() {
-  return (
-    <React.Fragment>
-      <Header/>
-      <SearchForm/>
-      <Commend/>
-    </React.Fragment>
-  )
+export default function App() {
+
+  <Router>
+    <Routes>
+      <Route exact path="/" element={<Home />}>
+      </Route>
+      <Route path="card">
+        {/* <Card /> */}
+      </Route>
+    </Routes>
+  </Router>
+
 }
 
-export default App;
+const root = ReactDOM.createPortal('root')
+root.render(<App />)
