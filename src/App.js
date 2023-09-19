@@ -1,25 +1,19 @@
 import React from 'react';
-import * as ReactDOM from 'react-dom'
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route
-} from "react-router-dom";
 import Home from './pages/Home'
+import { Routes, Route } from 'react-router-dom';
+import Login from './pages/Login';
+import ProductCard from './pages/ProductCard';
 
 export default function App() {
 
-  <Router>
+  return(
+
     <Routes>
-      <Route exact path="/" element={<Home />}>
-      </Route>
-      <Route path="card">
-        {/* <Card /> */}
-      </Route>
+      <Route exact path='/' element={<Home />}></Route>
+      <Route path='/login' element={<Login />}></Route>
+      <Route path='/card' element={<ProductCard />}></Route>
     </Routes>
-  </Router>
+
+  )
 
 }
-
-const root = ReactDOM.createPortal('root')
-root.render(<App />)

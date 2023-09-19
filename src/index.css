@@ -5,6 +5,10 @@
   --header-button-font: 'Open Sans', sans-serif;
   --search-input-font: 'Open Sans', sans-serif;
   --commend-title-font: 'Open Sans', sans-serif;
+  --cooperation-title-font: 'Open Sans', sans-serif;
+  --cooperation-list-item-title-font: 'Open Sans', sans-serif;
+  --auth-form-title-font: 'Open Sans', sans-serif;
+  --auth-form-input-font: 'Open Sans', sans-serif;
 }
 
 * {
@@ -43,6 +47,17 @@ body {
     padding-left: 90px;
   }
 
+    .header > .button > a {
+      text-decoration: none;
+      font-family: var(--header-button-font);
+      color: #6F6F6F;
+    }
+
+    .header > .button > a:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
   .header > .button {
     width: 151px;
     height: 57px;
@@ -55,12 +70,7 @@ body {
     line-height: 12.52px;
     margin-top: 130px;
     margin-right: 90px;
-  }
-
-  .header > .button:hover {
-    text-decoration: underline;
-    cursor: pointer;
-  }
+  }  
 
 .search-form {
   width: 59.1%;
@@ -106,7 +116,7 @@ body {
   align-items: center;
 }
 
-  .commend__title {
+  .commend__title, .cooperation__title {
     width: 441px;
     height: 69px;
     font-family: var(--commend-title-font);
@@ -147,8 +157,149 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      -webkit-box-shadow: 20px 20px 10px 0px rgba(188, 157, 238, 0.5);
+      -moz-box-shadow: 20px 20px 10px 0px rgba(188, 157, 238, 0.5);
+      box-shadow: 20px 20px 10px 0px rgba(188, 157, 238, 0.5);
     }
 
       .commend__list__item__image {
         width: 80%;
       }
+
+.cooperation {
+  width: 79.8%;
+  height: 681px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+  .cooperation__list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 4%;
+    margin-bottom: 100px;
+  }
+
+    .cooperation__list__item {
+      width: 28.6%;
+      height: 536px;
+      background: #BC9DEE;
+      border-radius: 20px;
+      -webkit-box-shadow: 0px 0px 10px 0px rgba(188, 157, 238, 0.5);
+      -moz-box-shadow: 0px 0px 10px 0px rgba(188, 157, 238, 0.5);
+      box-shadow: 0px 0px 10px 0px #6f6f6f80;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+      .cooperation__list__item__title {
+        font-family: var(--cooperation-list-item-title-font);
+        color: #fff;
+        font-weight: 700;
+        padding-top: 20px;
+      }
+
+.login-main, .card-main {
+  width: 100%;
+  height: 980px;
+  background: #BC9DEE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+  .auth-form {
+    width: 16.875%;
+    height: 398px;
+    background: #1E1E1E;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+    .auth-form__title {
+      width: 77.16%;
+      height: 39px;
+      margin: 0 auto;
+      font-family: var(--auth-form-title-font);
+      color: #fff;
+      font-size: 16px;
+      line-height: 15.66px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .auth-form__input {
+      width: 80.9%;
+      height: 53px;
+      font-family: var(--auth-form-input-font);
+      border: 2px solid #fff;
+      border-radius: 20px;
+      background: none;
+      margin-bottom: 20px;
+      padding: 10px;
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .auth-form__button {
+      width: 80.9%;
+      height: 53px;
+      border: none;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+
+      .auth-form__button > a {
+        text-decoration: none;
+        font-family: var(--auth-form-title-font);
+        color: #000;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 15.66px;
+      }
+
+      .auth-form__social-auth {
+        width: 80.9%;
+        height: 49px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16.67%;
+      }
+
+        .auth-form__social-auth__button {
+          width: 22.22%;
+          height: 49px;
+          border: 3px solid #fff;
+          border-radius: 20px;
+          background: none;
+        }
+
+          .auth-form__social-auth__button > img {
+            width: 73.08%;
+          }
+
+  .card-main__header {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+    .card-main__card-info {
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
