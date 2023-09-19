@@ -131,6 +131,19 @@ body {
     margin-bottom: 100px;
   }
 
+.commend__text {
+  width: 85vw;
+  height: 20vh;
+  font-family: var(--commend-title-font);
+  font-size: 20px;
+  color: #fff;
+  border: 3px solid #BC9DEE;
+  padding: 5px 10px;
+  border-radius: 16px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
   .commend__list {
     width: 80%;
     display: flex;
