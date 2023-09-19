@@ -1,8 +1,57 @@
-{
-    "product": [
-        {
-            "image": "img/image.jpg",
-            "title": "Профессиональная кофемашина"
-        }
-    ]
-}
+[
+    {
+        "category": "Мебель",
+        "items": [
+            {
+                "name": "Стол обеденный",
+                "img": "https://avatars.mds.yandex.net/get-mpic/6321906/img_id8844153298779163862.jpeg/orig",
+                "price": 100
+            }
+        ]
+    },
+    {
+        "category": "Кофе-машины",
+        "items": [
+            {
+                "img": "img/image.jpg",
+                "name": "Профессиональная кофемашина",
+                "price": 1000
+            }
+        ]
+    },
+    {
+        "category": "Посуда",
+        "items": [
+            {
+                "img": "https://avatars.mds.yandex.net/get-mpic/5257935/img_id467533983389302472.jpeg/orig",
+                "name": "Набор посуды \"Классика\"",
+                "price": 559
+            },
+            {
+                "img": "https://avatars.mds.yandex.net/get-mpic/1970506/img_id6064603241145021158.png/orig",
+                "name": "Стакан однослойный бумажный",
+                "price": 400
+            }
+        ]
+    },
+    {
+        "category": "Кондиционеры",
+        "items": [
+            {
+                "img": "https://avatars.mds.yandex.net/get-mpic/4880759/img_id1836246544708129369.jpeg/orig",
+                "name": "Сплит-система",
+                "price": 25000
+            }
+        ]
+    },
+    {
+        "category": "Холодильники",
+        "items": [
+            {
+                "img": "https://avatars.mds.yandex.net/get-mpic/5236584/img_id2543035516719523615.png/orig",
+                "name": "Двухкамерный холодильник",
+                "price": 100000
+            }
+        ]
+    }
+]
